@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj": {}
+    "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj": {
+    "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj",
         "projectName": "Library_Home_Works",
-        "projectPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works\\Library_Home_Works\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
