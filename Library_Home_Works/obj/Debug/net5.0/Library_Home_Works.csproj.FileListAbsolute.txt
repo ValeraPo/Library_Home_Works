@@ -1,0 +1,16 @@
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.AssemblyInfo.cs
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.exe
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.deps.json
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.runtimeconfig.json
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.runtimeconfig.dev.json
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.dll
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\ref\Library_Home_Works.dll
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\bin\Debug\net5.0\Library_Home_Works.pdb
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.dll
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\ref\Library_Home_Works.dll
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.pdb
+C:\Users\admin\Desktop\DevEd\Library_Home_Works\Library_Home_Works\obj\Debug\net5.0\Library_Home_Works.genruntimeconfig.cache
