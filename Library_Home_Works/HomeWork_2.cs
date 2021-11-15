@@ -27,7 +27,7 @@ namespace Library_Home_Works
         public static bool AimHit(double x, double y, double r)
         {
             if (r <= 0) throw new ArgumentException("Радиус не может быть меньше или равен нулю");
-            return (Math.Pow(x, 2) + Math.Pow(y, 2)) <= r;
+            return (Math.Pow(x, 2) + Math.Pow(y, 2)) <= Math.Pow(r, 2);
         }
 
         // Записать логическое условие, которые будет истинным,
