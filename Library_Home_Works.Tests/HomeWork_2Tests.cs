@@ -10,10 +10,10 @@ namespace Library_Home_Works.Tests
         [TestCase(456, 15)]
         [TestCase(100, 1)]
         [TestCase(999, 27)]
-        public void GetSumDigitTests(int a, int expexted)
+        public void GetSumDigitTests(int a, int expected)
         {
             int actual = HomeWork_2.GetSumDigit(a);
-            Assert.AreEqual(expexted, actual);
+            Assert.AreEqual(expected, actual);
         }
         [TestCase(99)]
         [TestCase(1000)]
@@ -27,10 +27,10 @@ namespace Library_Home_Works.Tests
         [TestCase(0, 1, 1, true)]
         [TestCase(-1, 0, 1, true)]
         [TestCase(-100, 100, 50, false)]
-        public void AimHitTests(double x, double y, double r, bool expexted)
+        public void AimHitTests(double x, double y, double r, bool expected)
         {
             bool actual = HomeWork_2.AimHit(x, y, r);
-            Assert.AreEqual(expexted, actual);
+            Assert.AreEqual(expected, actual);
         }
         [TestCase(1, 1, 0)]
         [TestCase(1, 1, -300)]
@@ -44,10 +44,10 @@ namespace Library_Home_Works.Tests
         [TestCase(755, false)]
         [TestCase(354, false)]
         [TestCase(335, false)]
-        public void CheckDigitInNumberTests(int num, bool expexted)
+        public void CheckDigitInNumberTests(int num, bool expected)
         {
             bool actual = HomeWork_2.CheckDigitInNumber(num);
-            Assert.AreEqual(expexted, actual);
+            Assert.AreEqual(expected, actual);
         }
         [TestCase(-999)]
         [TestCase(1002)]
@@ -61,10 +61,10 @@ namespace Library_Home_Works.Tests
         [TestCase(111, 111)]
         [TestCase(567, 765)]
         [TestCase(766, 667)]
-        public void SwapFirstAndLastDigitTests(int num, int expexted)
+        public void SwapFirstAndLastDigitTests(int num, int expected)
         {
             int actual = HomeWork_2.SwapFirstAndLastDigit(num);
-            Assert.AreEqual(expexted, actual);
+            Assert.AreEqual(expected, actual);
         }
         [TestCase(-999)]
         [TestCase(1002)]
@@ -78,10 +78,10 @@ namespace Library_Home_Works.Tests
         [TestCase(0.78, false)]
         [TestCase(0.0009, false)]
         [TestCase(-1.0, true)]
-        public void CheckNullFractionalPartTests(double num, bool expexted)
+        public void CheckNullFractionalPartTests(double num, bool expected)
         {
             bool actual = HomeWork_2.CheckNullFractionalPart(num);
-            Assert.AreEqual(expexted, actual);
+            Assert.AreEqual(expected, actual);
         }
         
     }

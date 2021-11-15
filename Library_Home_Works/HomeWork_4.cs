@@ -10,7 +10,7 @@ namespace Library_Home_Works
     {
         //Пользователь вводит одно число (A).
         //Вывести все числа от 1 до 1000, которые делятся на A.
-        public static double[] GetDividents(double div)
+        public static double[] GetDividends(double div)
         {
             if (div == 0) throw new DivideByZeroException("Деление на 0");
             if (div < 0) throw new ArgumentException("Число должно быть положительным");
@@ -35,14 +35,14 @@ namespace Library_Home_Works
         public static int GetMaxDiv(int num)
         {
             if (num == 0) throw new ArgumentException("Число не может быть равно 0");
-            for (int i = (Math.Abs(num)) / 2; ; i--)
+            for (int i = Math.Abs(num) / 2; ; i--)
                 if (num % i == 0) return i;
         }
 
         //Пользователь вводит два числа (A и B).
         //Вывести сумму всех чисел из диапазона от A до B,
         //которые делятся без остатка на 7. 
-        public static int GetSumDividentsOn7(int a, int b)
+        public static int GetSumDividendsOn7(int a, int b)
         {
             int min = Math.Min(a, b);
             int max = Math.Max(a, b);
@@ -142,13 +142,13 @@ namespace Library_Home_Works
                     index++;
                 }
             }
-            int[] result = new int[index];
-            Array.Copy(arr, 0, result, 0, index);
-            return result; 
+            // int[] result = new int[index];
+            // Array.Copy(arr, 0, result, 0, index);
+            return arr[..index]; 
         }
 
         // Сообщите, есть ли в написании двух чисел одинаковые цифры.
-        public static string CheckSameDigits(int a, int b)
+        public static string CheckSameDigits(int a, int b) //лучше переделать на bool
         {
             do
             {

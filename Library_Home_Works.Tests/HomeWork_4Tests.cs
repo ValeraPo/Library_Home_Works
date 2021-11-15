@@ -10,22 +10,22 @@ namespace Library_Home_Works.Tests
         [TestCase(500, new double[] { 500, 1000 })]
         [TestCase(300, new double[] { 300, 600, 900})]
         [TestCase(1000, new double[] {1000 })]
-        public void GetDividentsTests(double a, double[] expected)
+        public void GetDividendsTests(double a, double[] expected)
         {
-            double[] actual = HomeWork_4.GetDividents(a);
+            double[] actual = HomeWork_4.GetDividends(a);
             Assert.AreEqual(expected, actual);
         }
 
         [TestCase(-100)]
         [TestCase(1000.9)]
-        public void GetDividentsNegativeTest(double a)
+        public void GetDividendsNegativeTest(double a)
         {
-            Assert.Throws<System.ArgumentException>(() => HomeWork_4.GetDividents(a));
+            Assert.Throws<System.ArgumentException>(() => HomeWork_4.GetDividends(a));
         }
         [TestCase(0)]
-        public void GetDividentsNegativeTest2(double a)
+        public void GetDividendsNegativeTest2(double a)
         {
-            Assert.Throws<System.DivideByZeroException>(() => HomeWork_4.GetDividents(a));
+            Assert.Throws<System.DivideByZeroException>(() => HomeWork_4.GetDividends(a));
         }
         // Задание 2
         [TestCase(25.4, 5)]
@@ -67,9 +67,12 @@ namespace Library_Home_Works.Tests
         [TestCase(23, 14, 35)]
         [TestCase(-100, 100, 0)]
         [TestCase(0, -100, -735)]
-        public void GetSumDividentsOn7Tests(int a, int b, int expected)
+        // [TestCase(int.MinValue, int.MaxValue, 0)] //loop
+        // [TestCase(-4989843, 45654, -1778316730498)] //переполнение int
+        // [TestCase(0, int.MaxValue, 329406144633559917)]//переполнение int
+        public void GetSumDividendsOn7Tests(int a, int b, int expected)
         {
-            int actual = HomeWork_4.GetSumDividentsOn7(a, b);
+            int actual = HomeWork_4.GetSumDividendsOn7(a, b);
             Assert.AreEqual(expected, actual);
         }
         // Задание 5

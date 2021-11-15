@@ -14,6 +14,8 @@ namespace Library_Home_Works
         // если A<B, подсчитать A-B.
         public static double SystemEquations(double a, double b)
         {
+            // return a > b ? a + b :
+            // b > a ? a - b : a * b;
             double res;
             if (a > b) res = a + b;
             else if (a == b) res = a * b;
@@ -26,10 +28,10 @@ namespace Library_Home_Works
         // принадлежит точка с координатами (X,Y).
         public static int CheckZonePoint(double x, double y)
         {
-            int res = ((x > 0) && (y > 0)) ? 1 :
-                ((x > 0) && (y < 0)) ? 2 :
-                ((x < 0) && (y < 0)) ? 3 :
-                ((x < 0) && (y > 0)) ? 4 : 0;
+            int res = x > 0 && y > 0 ? 1 :
+                x > 0 && y < 0 ? 2 :
+                x < 0 && y < 0 ? 3 :
+                x < 0 && y > 0 ? 4 : 0;
 
             return res;
         }
@@ -38,10 +40,10 @@ namespace Library_Home_Works
         // Выведите их в консоль в порядке возрастания. 
         public static string OutputInAscendingOrder(double a, double b, double c)
         {
-            double min_num = ((a <= b) && (a <= c)) ? a : ((b <= c) && (b <= a)) ? b : c;
-            double max_num = ((a >= b) && (a >= c)) ? a : ((b >= c) && (b >= a)) ? b : c;
+            double min_num = a <= b && a <= c ? a : b <= c && b <= a ? b : c;
+            double max_num = a >= b && a >= c ? a : b >= c && b >= a ? b : c;
             double middle_num = Math.Round(a + b + c - max_num - min_num, 8);
-            return ($"{min_num} {middle_num} {max_num}");
+            return $"{min_num} {middle_num} {max_num}";
         }
 
         // Пользователь вводит три числа. Выведите в
@@ -116,11 +118,11 @@ namespace Library_Home_Works
 
         //Даны вещественные положительные числа a, b, c.
         //Выяснить, существует ли треугольник со сторонами a, b, c.
-        public static bool CheckExistanceTriangle(double a, double b, double c)
+        public static bool CheckExistenceTriangle(double a, double b, double c)
         {
             if (a <= 0 || b <= 0 || c <= 0)
                 throw new ArgumentException("Стороны должны быть больше 0");
-            return ((a > 0 && b > 0 && c > 0) && ((a + b) > c) && ((a + c) > b) && ((c + b) > a));
+            return a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && c + b > a;
         }
     }
 }

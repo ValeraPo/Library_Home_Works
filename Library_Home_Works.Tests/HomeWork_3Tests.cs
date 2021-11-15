@@ -73,18 +73,18 @@ namespace Library_Home_Works.Tests
         [TestCase(1, 2, 3, false)]
         [TestCase(4, 4, 8, false)]
         [TestCase(100, 567, 8, false)]
-        public void CheckExistanceTriangleTests(double a, double b, double c, bool expected)
+        public void CheckExistenceTriangleTests(double a, double b, double c, bool expected)
         {
-            bool actual = HomeWork_3.CheckExistanceTriangle(a, b, c);
+            bool actual = HomeWork_3.CheckExistenceTriangle(a, b, c);
             Assert.AreEqual(expected, actual);
         }
 
         [TestCase(-10, 2, 3)]
         [TestCase(3, 4, 0)]
         [TestCase(3, -3, 1)]
-        public void CheckExistanceTriangleNegativeTest(double a, double b, double c)
+        public void CheckExistenceTriangleNegativeTest(double a, double b, double c)
         {
-            Assert.Throws<System.ArgumentException>(() => HomeWork_3.CheckExistanceTriangle(a, b, c));
+            Assert.Throws<System.ArgumentException>(() => HomeWork_3.CheckExistenceTriangle(a, b, c));
         }
     }
 }

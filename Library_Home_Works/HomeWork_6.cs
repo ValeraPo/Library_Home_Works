@@ -31,10 +31,9 @@ namespace Library_Home_Works
         {
             int[,] mas = Helper.TwoDGenerateIntArray(9,9);
             for (int i = 0; i < mas.GetLength(0); i++)
-            {
-                for (int j = 0; j < mas.GetLength(1); j++)
-                    mas[i, j] = (i + 1) * (j + 1);
-            }
+              for (int j = 0; j < mas.GetLength(1); j++)
+                  mas[i, j] = (i + 1) * (j + 1);
+           
             return mas;
         }
 
@@ -47,13 +46,13 @@ namespace Library_Home_Works
             int[,] mas = Helper.TwoDGenerateIntArray(size, size);
             int condition_black = (mas.GetLength(0) - 1) % 2;
             for (int i = mas.GetLength(0) - 1; i >= 0; i--)
-            {
-                for (int j = 0; j < mas.GetLength(1); j++)
-                {
-                    if ((i + j) % 2 == condition_black) mas[i, j] = 0;
-                    else mas[i, j] = 1;
-                }
-            }
+            for (int j = 0; j < mas.GetLength(1); j++)
+                mas[i, j] = (i + j) % 2 == condition_black ? 0 : 1;
+                // {
+                //     if ((i + j) % 2 == condition_black) mas[i, j] = 0;
+                //     else mas[i, j] = 1;
+                // }
+            
             return mas;
         }
 
@@ -128,7 +127,6 @@ namespace Library_Home_Works
         {
             int cnt = 0;
             for (int i = 0; i < mas.GetLength(0); i++)
-            {
                 for (int j = 0; j < mas.GetLength(1); j++)
                 {
                     int sum = 0;
@@ -139,7 +137,7 @@ namespace Library_Home_Works
 
                     if (mas[i, j] > sum) cnt++;
                 }
-            }
+            
             return cnt;
         }
 
@@ -150,14 +148,13 @@ namespace Library_Home_Works
             char[,] mas = new char[size, size];
 
             for (int i = 0; i < mas.GetLength(0); i++)
-            {
                 for (int j = 0; j < mas.GetLength(1); j++)
                 {
                     if ((i <= j && i <= mas.GetLength(0) - 1 - j)
                       || (i >= j && i >= mas.GetLength(0) - 1 - j)) mas[i, j] = '1';
                     else mas[i, j] = '0';
                 }
-            }
+            
             return mas;
         }
 
@@ -167,16 +164,15 @@ namespace Library_Home_Works
             if (matrix1.GetLength(1) != matrix2.GetLength(0))
                 throw new ArgumentException("Матриццы несовместимы");
             // Создаем массив - результат умножения
-            int[,] matrix_res = new int[matrix1.GetLength(0), matrix2.GetLength(1)];
+            int[,] matrix_res = new int[matrix1.GetLength(0), matrix2.GetLength(1)]; //итоговая матрица должна быть long, иначе быстро переполниться
             for (int i = 0; i < matrix_res.GetLength(0); i++)
-            {
                 for (int j = 0; j < matrix_res.GetLength(1); j++)
                 {
                     matrix_res[i, j] = 0;
                     for (int k = 0; k < matrix1.GetLength(1); k++)
                         matrix_res[i, j] += matrix1[i, k] * matrix2[k, j];
                 }
-            }
+            
             return matrix_res;
         }
     }
