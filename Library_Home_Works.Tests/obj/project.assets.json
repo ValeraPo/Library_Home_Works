@@ -4969,25 +4969,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\GG\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works.Tests\\Library_Home_Works.Tests.csproj",
+      "projectUniqueName": "C:\\Project\\Library_Home_Works\\Library_Home_Works.Tests\\Library_Home_Works.Tests.csproj",
       "projectName": "Library_Home_Works.Tests",
-      "projectPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works.Tests\\Library_Home_Works.Tests.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works.Tests\\obj\\",
+      "projectPath": "C:\\Project\\Library_Home_Works\\Library_Home_Works.Tests\\Library_Home_Works.Tests.csproj",
+      "packagesPath": "C:\\Users\\GG\\.nuget\\packages\\",
+      "outputPath": "C:\\Project\\Library_Home_Works\\Library_Home_Works.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5000,8 +5003,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\DevEd\\Library_Home_Works_git\\Library_Home_Works\\Library_Home_Works.csproj"
+            "C:\\Project\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj": {
+              "projectPath": "C:\\Project\\Library_Home_Works\\Library_Home_Works\\Library_Home_Works.csproj"
             }
           }
         }
@@ -5048,7 +5051,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

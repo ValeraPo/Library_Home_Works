@@ -35,7 +35,7 @@ namespace Library_Home_Works
         // одновременно строго больше последней.
         public static bool CheckDigitInNumber(int num)
         {
-            if (num < 100 || num > 999) throw new ArgumentException("Число дожно быть трехзначным");
+            if (num < 100 || num > 999) throw new ArgumentException("Число должно быть трехзначным");
             int middle = num / 10 % 10;
             return (middle <= num / 100) && (middle > num % 10);
         }
@@ -45,7 +45,7 @@ namespace Library_Home_Works
         //Собрать новое число в новой переменной
         public static int SwapFirstAndLastDigit(int num)
         {
-            if (num < 100 || num > 999) throw new ArgumentException("Число дожно быть трехзначным");
+            if (num < 100 || num > 999) throw new ArgumentException("Число должно быть трехзначным");
             int first = num / 100;
             int last = num % 10;
             Helper.Swap(ref first, ref last);
@@ -57,8 +57,7 @@ namespace Library_Home_Works
         // что в double числе нулевая дробная часть.
         public static bool CheckNullFractionalPart(double num)
         {
-            
-            return num == (int)num;
+            return num % 1 == 0;
         }
     }
 }

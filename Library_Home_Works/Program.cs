@@ -110,7 +110,7 @@ namespace Library_Home_Works
             double a36 = Helper.InputDouble("A");
             double b36 = Helper.InputDouble("B");
             double c36 = Helper.InputDouble("C");
-            if (HomeWork_3.CheckExistanceTriangle(a36, b36, c36))
+            if (HomeWork_3.CheckExistenceTriangle(a36, b36, c36))
                 Console.WriteLine("Треугольник с такими сторонами существует");
             else
                 Console.WriteLine("Треугольник с такими сторонами не существует");
@@ -118,7 +118,7 @@ namespace Library_Home_Works
             Helper.Header(4, 1);
             Console.WriteLine("Вывести все числа от 1 до 1000, которые делятся на A\n");
             double div41 = Helper.InputDouble("A");
-            Helper.PrintArray(HomeWork_4.GetDividents(div41));
+            Helper.PrintArray(HomeWork_4.GetDividends(div41));
 
             Helper.Header(4, 2);
             Console.WriteLine("Найдите количество положительных целых чисел, " +
@@ -136,7 +136,7 @@ namespace Library_Home_Works
                 "\nкоторые делятся без остатка на 7\n");
             int a44 = Helper.InputInt("A");
             int b44 = Helper.InputInt("B");
-            Helper.PrintAnswer(HomeWork_4.GetSumDividentsOn7(a44, b44));
+            Helper.PrintAnswer(HomeWork_4.GetSumDividendsOn7(a44, b44));
 
             Helper.Header(4, 5);
             Console.WriteLine("Найти наибольший общий делитель A и B " +

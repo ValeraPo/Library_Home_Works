@@ -55,7 +55,7 @@ namespace Library_Home_Works
         public static int[] ShiftArray(int[] mas)
         {
             for (int i = 0; i < mas.Length; i++)
-                Helper.Swap(ref mas[i], ref mas[mas.Length - 1]);
+                Helper.Swap(ref mas[i], ref mas[^1]);
             return mas;
         }
 
